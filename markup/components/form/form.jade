@@ -1,2 +1,22 @@
 mixin form(data)
-    .form
+    section.form
+        .form__in
+            h2.form__title забронировать столик
+            form.form__form(action="" method="post")
+                .form__row
+                    .form__field
+                        label.form__label.form__label_date(for="date") дата
+                        input.form__input#date(type="text", name="date" placeholder="дата")
+                    .form__field
+                        label.form__label.form__label_time(for="time") время
+                        input.form__input#time(type="text", name="time" placeholder="время")
+                    .form__field
+                        label.form__label.form__label_person(for="person") на сколько персон
+                        input.form__input#person(type="text", name="person" placeholder="на сколько персон")
+                .form__row.form__row_second
+                    .form__field
+                        input.form__input#name(type="text", name="name" placeholder="имя")
+                    .form__field
+                        input.form__input#phone(type="text", name="phone" placeholder="телефон")
+                .form__row.form__row_bottom
+                    input.form__submit(type="submit", value="Забронировать")

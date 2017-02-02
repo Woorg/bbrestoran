@@ -1,0 +1,13 @@
+mixin popup(data)
+    .popup.mfp-hide#contacts-popup
+        h2.popup__title Закажите звонок
+        p.popup__text Оставьте ваши контакты и мы вам перезвоним
+        .popup__form(method="post")
+            .popup__field
+                input.popup__input(type="text", name="name", value="", placeholder="Имя")
+            .popup__field
+                input.popup__input(type="text", name="email", value="", placeholder="Email")
+            .popup__field
+                input.popup__input(type="text", name="phone", value="", placeholder="Телефон")
+            input.popup__submit(type="submit", value="Отправить заявку")
+        p.popup__note Ваши данные не будут переданы третьим лицам.

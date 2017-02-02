@@ -1,0 +1,39 @@
+.footer
+    min-height 116px
+    background #343030
+    &__in
+        @extends .in
+        padding-top 78px
+        padding-bottom 99px
+    &__w
+        font-size 0
+        text-align center
+    &__copyright,
+    &__email,
+    &__phone
+        position relative
+        margin-left 32px
+        display inline-block
+        vertical-align top
+        font-size 22px
+        color #7F7F7F
+        text-transform uppercase
+        &:after
+            position absolute
+            top 50%
+            left -18px
+            margin-top -3px
+            content ""
+            width 6px
+            height 6px
+            background #7F7F7F
+            border-radius 50%
+    &__copyright
+        margin-left 0
+        &:after
+            display none
+    &__email
+        text-decoration none
+    &__phone
+        text-decoration none
+

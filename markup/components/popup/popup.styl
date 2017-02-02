@@ -1,0 +1,68 @@
+.popup
+    position relative
+    margin auto
+    padding 33px 40px 30px
+    width 408px
+    min-height 440px
+    background #0071BC
+    font-family $osReg
+    font-weight normal
+    text-align center
+    color #FFF
+    &__title
+        margin-bottom 10px
+        font-family $osBld
+        font-weight normal
+        font-size 30px
+        text-transform uppercase
+    &__text
+        padding-right 50px
+        padding-left 50px
+        margin-bottom 16px
+        font-size 18px
+        line-height 24px
+    &__form
+        margin-bottom 10px
+        text-align left
+    &__field
+        margin-bottom 13px
+    &__input
+        border 2px solid #C4C4C4
+        padding 6px 6px 6px 10px
+        width 320px
+        min-height 50px
+        background #FFF
+        font-family $osReg
+        font-weight normal
+        font-size 14px
+        color #000
+        +placeholder()
+            color #000
+    &__submit
+        border none
+        bg($popup-submit)
+        hide-text()
+        opacity 1
+        transition opacity .2s ease
+        &:hover
+            opacity .9
+    &__note
+        font-size 11px
+
+
+.contacts-popup
+    background rgba(255,255,255, .7)
+    button.mfp-close
+        position absolute
+        top -33px
+        right -34px
+        size(28px)
+        border-radius 50%
+        background #000
+        font-size 23px
+        font-weight normal
+        color #FFF
+        line-height 30px
+        opacity 1
+        &:hover
+            opacity 0.8

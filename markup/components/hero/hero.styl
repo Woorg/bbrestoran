@@ -1,1 +1,60 @@
+.hero
+    position relative
+    padding-top 214px
+    min-height 750px
+    &__bg
+        position absolute
+        top 0
+        left 0
+        right 0
+        min-height 750px
+        background url('../img/content/hero-index.jpg') no-repeat fixed
+        background-size cover
+    &__badge
+        position relative
+        right -11px
+        margin auto
+
+.badge
+    z-index 1
+    padding 14px
+    width 340px
+    height 340px
+    border-radius 50%
+    background #0071bc url('../img/general/symbol-pattern.jpg') repeat
+    &__w
+        position relative
+        border 4px solid #0071BC
+        margin auto
+        padding-top 164px
+        padding-bottom 66px
+        width 312px
+        height 312px
+        border-radius 50%
+        background transparent
+        color #0071BC
+        text-align center
+        &:after
+            position absolute
+            top 45px
+            left 50%
+            margin-left -67px
+            content ""
+            width 134px
+            height 100px
+            background url('../img/general/logo@2x.png') 0 0 no-repeat
+            background-size cover
+    &__title
+        margin-bottom 16px
+        font-family $serifBldit
+        font-weight normal
+        font-size 34px
+        color inherit
+    &__text
+        font-family $serifIt
+        font-weight normal
+        // font-style italic
+        font-size 35px
+        color inherit
+
 

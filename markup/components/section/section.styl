@@ -1,0 +1,172 @@
+.section
+    padding-top 64px
+    padding-bottom 30px
+    &__w
+        position relative
+        z-index 1
+        @extends .in
+        cf()
+    &__in
+        @extends .in
+    &__title
+         @extends .title
+    &__text
+        @extends .wysiwyg
+
+
+.section_first
+    position relative
+    &:before
+        position absolute
+        top -87px
+        left 50%
+        margin-left -135px
+        content ""
+        bg($hero-btn)
+
+
+.section_style-first
+    .section__left
+        float left
+        width 390px
+        text-align center
+    .section__right
+        float right
+        width 773px
+    .section__title
+        margin-top 2px
+        margin-bottom 30px
+        @extends .title
+    .section__title,
+    .section__text
+        text-align center
+    .section__text
+        margin-bottom 20px
+    .section__more-link
+        font-size 17px
+        color #0071BC
+        text-transform uppercase
+        &:hover
+            text-decoration none
+
+
+.section_slider
+    padding-top 18px
+
+    @extends .in
+    .section__title
+        margin-bottom 38px
+        text-align center
+
+
+.section_gallery
+    margin auto
+    padding-top 30px
+    padding-bottom 48px
+    width 1180px
+    .section__title
+        margin-bottom 38px
+        font-family $serifReg
+        font-size 25px
+        text-transform uppercase
+        text-align center
+
+.section_text
+    position relative
+    padding-top 44px
+    padding-bottom 24px
+    @extends .in
+    &:before,
+    &:after
+        position absolute
+        left 0
+        right 0
+        content ""
+        height 34px
+    &:before
+        top 0
+        background transparent url('../img/general/line-top.jpg') 50% 0 no-repeat
+
+    &:after
+        bottom 0
+        background transparent url('../img/general/line-bottom.jpg') 50% 0 no-repeat
+
+    .section__text
+        @extends .wysiwyg
+        text-align center
+        p
+            margin-bottom 25px
+
+.section_social
+    position relative
+    padding-top 288px
+    padding-bottom 32px
+    min-height 441px
+    background #0071BC
+    text-align center
+    &:after
+        position absolute
+        content ""
+        top 65px
+        left 50%
+        margin-left -190px
+        bg($logo-big)
+
+.section_five
+    padding-top 50px
+
+
+.social
+    &__title
+        margin-bottom 32px
+        font-size 25px
+        line-height 30px
+        text-transform uppercase
+    &__list
+        font-size 0
+    &__item
+        display inline-block
+        vertical-align top
+    &__link
+        opacity 1
+        hide-text()
+        transition opacity .2s ease
+        &:hover
+            opacity .9
+    &__item_inst
+        .social__link
+            display block
+            bg($inst-icon)
+
+
+
+.img-block
+    font-size 0
+    &__item
+        margin-left 16px
+        display inline-block
+        vertical-align top
+        &:first-child
+            margin-left 0
+    &__img
+        width 247px
+        height 323px
+
+.gallery
+    padding-left 20px
+    font-size 0
+    &__item
+        margin-right 10px
+        margin-bottom 5px
+        height 123px
+        display inline-block
+        vertical-align top
+        &:nth-child(6n)
+            margin-right 0
+    &__link
+        display block
+    &__img
+        display block
+        max-width 100%
+        height auto
+

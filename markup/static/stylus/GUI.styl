@@ -1,2 +1,54 @@
 // GUI stylies of the project
 // For example, styles of the links, buttons and so on.
+
+
+.title
+    font-family $serifIt
+    font-weight normal
+    font-size 40px
+    line-height 48px
+    color #0071BC
+
+.wysiwyg
+    p
+        font-family $serifReg
+        font-size 22px
+        font-weight normal
+        line-height 26px
+        color #000000
+
+
+.slider
+    margin auto
+    width 980px
+    min-height 384px
+    // &__item
+
+    // &__img
+    .slick-arrow
+        width 56px
+        height 56px
+        background #fff
+        color #0071BC
+        border-radius 50%
+        z-index 1
+        transition opacity .2s ease
+        &:hover
+            background #fff
+            opacity .9
+    .slick-prev
+        left 15px
+        &:before
+            content "<"
+            font-family Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif
+            font-size 25px
+            font-weight bold
+            color #0071BC
+    .slick-next
+        right 15px
+        &:before
+            font-family Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif
+            font-size 25px
+            font-weight bold
+            content ">"
+            color #0071BC
