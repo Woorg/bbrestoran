@@ -139,19 +139,21 @@ mixin section-social(data)
             .social
                 h2.social__title мы в соцсетях
                 ul.social__list
+                    li.social__item.social__item_fb
+                        a.social__link(href="#link-1") Facebook
                     li.social__item.social__item_inst
                         a.social__link(href="#link-1") Инстаграм
 
 
 
-mixin section-social(data)
+mixin section-services(data)
 
     .section.section_services
         .section__in
-            .services
+            .services.services_first
                 h1.services__title Банкеты и услуги
                 .services__w
-                    p.services__text.services_left
+                    .services__text.services_left
                         strong Фуршеты, банкеты, свадебные торжества, корпоративные мероприятия, детские праздники.
 
                         p Ресторан Бакинская бухта - идеальное место для проведения мероприятий любого формата и направленности. Светский ужин или деловая встреча, корпоративное торжество или гала-концерт - каждое событие станет незабываемым и полным позитивных эмоций.
@@ -163,10 +165,10 @@ mixin section-social(data)
                     .services__img.services_right
                         img(src="__static__/img/content/service-1.jpg", alt="Банкеты и услуги")
 
-            .services
+            .services.services_second
                 h2.services__title Кейтеринг
                 .services__w
-                    p.services__text.services_right
+                    .services__text.services_right
                         p Ресторан Бакинская бухта имеет честь предложить организацию выездного обслуживания в любом уголке Москвы.
 
                         p Мы готовы организовать как романтический ужин на двоих, так и роскошный свадебный банкет, приватный прием или обед по всем требованиям делового протокола. В любом формате проведения мероприятия мы гарантируем высокий уровень сервиса, безупречное обслуживание и блюда высокого класса.
@@ -177,3 +179,9 @@ mixin section-social(data)
                         img(src="__static__/img/content/service-2.jpg", alt="Кейтеринг")
 
 
+mixin section-delivery(data)
+    .section.section_text
+
+       .section__text
+           p Ресторан "Бакинская бухта" предлагает вам попробовать вкуснейшие блюда традиционной азербайджанской кухни с доставкой на дом или в офис! Огромный выбор блюд, помогут вам по настоящему узнать, что такое традиционное Бакинское гостеприимство. Непередаваемые ароматы кавказских специй, только отборные свежие продукты, а так же все мастерство наших поваров вложены в работу!
+           p Мы не ограничиваем вас наличием минимальной суммы заказа! Доставка осуществляется от 1000 руб. ежедневно. Поверьте, попробовав раз, вам захочется заказывать у нас снова и снова!

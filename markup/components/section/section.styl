@@ -16,13 +16,6 @@
 
 .section_first
     position relative
-    &:before
-        position absolute
-        top -87px
-        left 50%
-        margin-left -135px
-        content ""
-        bg($hero-btn)
 
 
 .section_style-first
@@ -49,7 +42,6 @@
         &:hover
             text-decoration none
 
-
 .section_slider
     padding-top 18px
 
@@ -57,7 +49,6 @@
     .section__title
         margin-bottom 38px
         text-align center
-
 
 .section_gallery
     margin auto
@@ -115,6 +106,52 @@
 .section_five
     padding-top 50px
 
+.section_services
+    .section__in
+        margin auto
+        padding-top 45px
+        padding-bottom 0
+        width 1160px
+.services
+    margin-bottom 16px
+    &__title
+        margin-left 160px
+        margin-bottom 30px
+        @extends .title
+    &__w
+        padding-left 16px
+        cf()
+    &__text
+        width 540px
+        @extends .wysiwyg
+        font-family $serifBld
+        font-size 18px
+        line-height 22px
+        text-align left
+        b
+            margin-bottom 18px
+        strong
+            display block
+            margin-bottom 18px
+        p
+            margin-bottom 18px
+            font-size 18px
+            line-height 23px
+    &__img
+        width 518px
+        img
+            max-width 100%
+            height auto
+    &_left
+        float left
+    &_right
+        float right
+
+.services_second
+    .services__title
+        margin-right 160px
+        margin-left 0
+        text-align right
 
 .social
     &__title
@@ -125,8 +162,11 @@
     &__list
         font-size 0
     &__item
+        margin-left 30px
         display inline-block
         vertical-align top
+        &:first-child
+            margin-left 0
     &__link
         opacity 1
         hide-text()
@@ -137,7 +177,10 @@
         .social__link
             display block
             bg($inst-icon)
-
+    &__item_fb
+        .social__link
+            display block
+            bg($fb-icon)
 
 
 .img-block

@@ -2,18 +2,38 @@
     position relative
     padding-top 214px
     min-height 750px
+    &:before
+        position absolute
+        bottom -91px
+        left 50%
+        margin-left -135px
+        content ""
+        bg($hero-btn)
+        z-index 1
     &__bg
         position absolute
         top 0
         left 0
         right 0
         min-height 750px
-        background url('../img/content/hero-index.jpg') no-repeat fixed
+        background url('../img/content/hero-index.jpg') no-repeat
         background-size cover
     &__badge
         position relative
         right -11px
         margin auto
+.hero_news
+    .hero__bg
+        background url('../img/content/hero-news.jpg') no-repeat
+        background-size cover
+.hero_contacts
+    .hero__bg
+        background url('../img/content/hero-contacts.jpg')  no-repeat
+        background-size cover
+.hero_delivery
+    .hero__bg
+        background url('../img/content/hero-delivery.jpg') no-repeat
+        background-size cover
 
 .badge
     z-index 1
